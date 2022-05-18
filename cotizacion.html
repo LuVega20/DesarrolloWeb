@@ -1,0 +1,145 @@
+<html>
+	<head>
+		<title>Cotizaci&oacuten Gorgeous Life & Co. </title>
+		<style type="text/css"> 
+			* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+		</style>
+		<meta charset="UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>FORMULARIO DE COTIZACION</title>
+		<link rel="stylesheet" href="css/ESTILOS.css"> 
+		<script scr="js/jquery.js"></script>
+		<script scr="js/SCRIPT.js"></script>
+	</head>
+	<body text= "#000" background="imagenes/fondo.jpg">
+		<center>
+			<table>
+				<TR>
+					<TD align="center" ><IMG SRC="imagenes/logo.jpg" WIDTH=200 HEIGHT=200 BORDER=0 ALT="LOGO"></TD>
+					<TD><b><font size= 10>Gorgeous Life & Co. Tattoo</font></b></TD> 
+				</TR>
+				<TR>
+					<TD colspan="2">
+						
+						<ul class="nav">
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="tattoos.html">Tattoos</a>
+								<ul>
+									<li><a href="galeria.html">Galer&iacutea</a></li>
+									<li><a href="cotizacion.html">Cotizar tatuaje</a></li>
+								</ul>
+							</li>
+							<li><a href="contacto.html">Contacto</a>
+								<ul>
+									<li><a href="contacto.html">Contacto</a></li>
+									<li><a href="redesSociales.html">Redes Sociales</a>
+										<ul>
+											<li><a href="https://www.facebook.com/gorgeouslifeco">Facebook</a></li>
+											<li><a href="https://www.instagram.com/gorgeouslifeco/?igshid=YmMyMTA2M2Y=&fbclid=IwAR0qx_l_he6drL25fA9FvOx8gDyEM6DXESVpRDho1nG0m99N7bBXPvDgn2s">Instagram</a></li>
+										</ul>
+									</li>	
+								</ul>
+							</li>
+						</ul>
+					</TD> 
+				</TR>
+				<TR>
+				<TD colspan="2"><IMG SRC="imagenes/fondo.jpg" WIDTH=800 HEIGHT=50 BORDER=0 ALT="ESPACIO"></TD>
+				</TR>
+				<TR>
+					<TD colspan="2">
+					<section class="form_wrap">
+					 <section class ="contact_info">
+						 <section class ="info_title">
+							 <h2>QUIERO COTIZAR<br>MI TATUAJE</h2>
+						  </section> 
+						  <section class="info_items">
+							  <p>Te damos la mejor recomendaci&oacute;n para el dise&ntilde;o,utilizamos la mas alta t&eacute;cnica para que tu tatuaje quede perfecto y te asesoramos durante el proceso de cicatrizaci&oacute;n para que el final sea justo como lo esperabas</p>
+							  <p><b>Solo necesitamos unos datos:</b></p>
+							  <p><b>1.Tu nombre <br><br>2.Tu celular para enviarte WhatsApp<br><br>3.Tu email<br><br>4.Si tienes alguna imagen, adjunta tu link, si aun no tienes un dise&ntilde;o, no te preocupes ac&aacute; nos encargamos.<br><br></b></p>
+							  <p><b><br>Y por &uacute;ltimo.Cu&eacute;ntanos c&oacute;mo quieres tu tatuaje<br></b></p>
+							  <p><b><br>NOS VEMOS PRONTO!!<br></b></p>
+						  </section>
+					 </section>
+
+					 <form action ="ENVIAR.php" method="post" class="form_contact">
+						 <h2><b>COMP&Aacute;RTENOS LA<br>SIGUIENTE INFORMACI&Oacute;N</b></h2>
+						 <p>PARA RECIBIR TU COTIZACI&Oacute;N<br></p>
+						 <div class= "user_info">
+							 <label for="names">Nombre *</label>
+							 <input type ="text" id="names" name="nombre" required>
+
+							 <label for="phone">WhatsApp * </label>
+							 <input type ="text" id="phone" name="telefono" required>
+							 
+							 <label for="email">Email* </label>
+							 <input type ="text" id="email" name="correo" required>
+							 
+							 <label for="linktatto">Link con la imagen que quieres tatuarte</label>
+							 <input type ="text" id="linktatto" "name="tatto">
+							 
+							 <label for="mensaje">De qu&eacute; se trata tu tatuaje *</label>
+							 <textarea id="mensaje" name="mensaje" required></textarea>
+							 
+							 <input type="submit" value="ENVIA COTIZACI&Oacute;N" id="btnSend">
+							 
+
+						 </div>
+					 </form>
+				</section>
+				</TD>
+				</TR>
+			</table>
+		</center>
+		
+	</body>
+</html>
